@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gym_spott/userdata1.dart';
 
-class RegisterPage extends StatelessWidget {
-  const RegisterPage({Key? key}) : super(key: key);
+class login extends StatelessWidget {
+  const login({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -200,24 +199,15 @@ class RegisterPage extends StatelessWidget {
             Positioned(
               left: 163,
               top: 461,
-              child: GestureDetector(
-                onTap: () {
-                  // Navegar a UserData1Page al hacer clic en "Continue"
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => UserData1Page()),
-                  );
-                },
-                child: Text(
-                  'Continue',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontFamily: 'Outfit',
-                    fontWeight: FontWeight.w700,
-                    height: 0,
-                  ),
+              child: Text(
+                'Continue',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16,
+                  fontFamily: 'Outfit',
+                  fontWeight: FontWeight.w700,
+                  height: 0,
                 ),
               ),
             ),

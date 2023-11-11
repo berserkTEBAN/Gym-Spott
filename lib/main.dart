@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gym_spott/signup.dart';
 import 'package:gym_spott/login.dart';
+import 'package:gym_spott/signup.dart';
+import 'package:gym_spott/user2.dart';
+import 'package:gym_spott/user3.dart';
+import 'package:gym_spott/user4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -95,7 +98,7 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => RegisterPage()),
+                  MaterialPageRoute(builder: (context) => User4()),
                 );
               },
               style: ElevatedButton.styleFrom(
@@ -120,22 +123,6 @@ class MyHomePage extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class TestPage extends StatelessWidget {
-  const TestPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Test Page'),
-      ),
-      body: Center(
-        child: Text('This is a test page'),
       ),
     );
   }
